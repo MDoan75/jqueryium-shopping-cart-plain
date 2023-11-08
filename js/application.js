@@ -29,7 +29,7 @@ $(document).ready(function () {
     "<div class='col-xs-3 price'>$"+price+".00</div>" +
     "<div class ='col-xs-3 pax'>QTY<input type='number' /></div>" +
       "<div class ='col-xs-1 remove'><button class='btn btn-light btn-sm remove'>remove</button></div>" +
-      "<div class='col-xs-2 totalcost'>$--.--</div>" +
+      "<div class='col-xs-2 totalcost'>$00.00</div>" +
     "</div>");
  });
 });
