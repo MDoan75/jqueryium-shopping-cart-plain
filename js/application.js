@@ -19,7 +19,14 @@ $(document).ready(function () {
 
   $(document).on('click', '.btn.remove', function (){
     $(this).parent().parent().remove();
+    var grandTotal = 0;
+    $(".totalcost").each(function () {
+    if (/\d/.test($(this).text())) {
+      grandTotal += parseFloat($(this).text().substring(1));
+    }
   });
+  console.log(`Grand Total: $${grandTotal}.00`);
+});
 
   $(document).on('click', '.btn.add', function (){
     var product = $(this).parent().prev().prev().children("input").val();
